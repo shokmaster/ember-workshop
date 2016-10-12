@@ -1,0 +1,15 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Restaurants</h3>
+	</div>
+
+	<div class="list-group">
+	    {{#each model as |restaurant| }}
+		 {{#link-to 'restaurants.detail' 
+		 	(query-params id=restaurant.id)
+		 	class="list-group-item"}}
+		  		{{restaurant-listing restaurant=restaurant}}
+		  {{/link-to}}
+		{{/each}}
+	</div>
+</div>
