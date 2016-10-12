@@ -7,9 +7,10 @@ module.exports = function(defaults) {
     // Add options here
   });
 
-  // Use `app.import` to add additional libraries to the generated
-  // output files.
-  //
+  app.import('bower_components/bootstrap/dist/css/bootstrap-theme.min.css');
+  app.import('bower_components/bootstrap/dist/css/bootstrap.min.css');
+  app.import('bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf');
+  
   // If you need to use different assets in different
   // environments, specify an object as the first parameter. That
   // object's keys should be the environment name and the values
