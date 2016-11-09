@@ -12,3 +12,9 @@ If you're building a multi-language site, it's highly recommended that you insta
 ```bash
 ember install ember-i18n
 ```
+
+To create locale:
+
+```bash
+ember generate locale es
+```
