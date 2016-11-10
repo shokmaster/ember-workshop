@@ -3,5 +3,17 @@
 	<div class="caption">
 		<h3>{{model.name}}</h3>
 		<p>{{model.description}}</p>
+		<p>Horario: {{model.opens}} - {{model.closes}}</p>
+		<p><span class="label label-info">Tipo de cocina</span> {{model.cuisine}}</p>
+		<p><span class="label label-info">Days:</span> {{model.days}}</p>
+		<p><span class="label label-info">Location:</span> {{model.location}}</p>
+		<p>Menu:</p>
+		<ul>
+		{{#each model.menuItems as |menu|}}
+			<li>{{menu.name}} - {{menu.price}}</li>
+		{{/each}}
+		</ul>
+		<p><span class="label label-info">Price</span> {{model.price}}</p>
+		<p><span class="label label-info">Rating</span> <span class="badge badge-warning">{{model.rating}}</span></p>
 	</div>
 </div>
